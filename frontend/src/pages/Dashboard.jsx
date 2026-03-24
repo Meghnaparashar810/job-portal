@@ -1,8 +1,8 @@
 import "./dashboard.css";
 import { useNavigate } from "react-router-dom"
-import axios from "axios";
 import { useState, useEffect } from 'react';
 import pic from "../assets/student.png"
+import axios from "axios";
 function Dashboard() {
 
     const navigate = useNavigate();
@@ -16,7 +16,7 @@ function Dashboard() {
             try {
 
                 const res = await axios.get(
-                    "http://localhost:8000/api/auth/getcompany",
+                    "https://job-portal-1-p5qs.onrender.com/api/auth/getcompany",
                     { withCredentials: true }
                 );
 

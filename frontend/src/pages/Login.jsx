@@ -20,7 +20,7 @@ function Login() {
 
     try {
       dispatch(showLoading())
-      const res = await axios.post('http://localhost:8000/api/auth/login',
+      const res = await axios.post('https://job-portal-1-p5qs.onrender.com/api/auth/login',
         { email, password },
         { withCredentials: true }
       );

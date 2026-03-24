@@ -18,7 +18,7 @@ function FacultyDashboard() {
       try {
 
         const res = await axios.get(
-          "http://localhost:8000/api/auth/getcompany",
+          "https://job-portal-1-p5qs.onrender.com/api/auth/getcompany",
           { withCredentials: true }
         );
 
@@ -41,7 +41,7 @@ function FacultyDashboard() {
     try {
 
       await axios.delete(
-        `http://localhost:8000/api/auth/deletecompany/${id}`,
+        `https://job-portal-1-p5qs.onrender.com/api/auth/deletecompany/${id}`,
         { withCredentials: true }
       );
       if (!window.confirm("Are you sure you want to delete this job?"))
@@ -80,7 +80,7 @@ function FacultyDashboard() {
     try {
 
       await axios.patch(
-        `http://localhost:8000/api/auth/getcompany/${editingId}`,
+        `https://job-portal-1-p5qs.onrender.com/api/auth/getcompany/${editingId}`,
         editData,
         { withCredentials: true }
       );

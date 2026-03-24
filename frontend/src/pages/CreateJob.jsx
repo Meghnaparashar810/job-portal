@@ -14,7 +14,7 @@ function CreateJob() {
 
     try {
       const res = await axios.post(
-        "http://localhost:8000/api/auth/company",
+        "https://job-portal-1-p5qs.onrender.com/api/auth/company",
         { company, position, status, workType, workLocation },
         { withCredentials: true } 
       );

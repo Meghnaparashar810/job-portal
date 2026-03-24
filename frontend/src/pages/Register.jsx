@@ -28,7 +28,7 @@ function Register() {
         return alert("please provide all field")
       }
       dispatch(showLoading())
-      const res = await axios.post('http://localhost:8000/api/auth/register',
+      const res = await axios.post('https://job-portal-1-p5qs.onrender.com/api/auth/register',
         { fullname, email, password, role },
 
         { withCredentials: true });

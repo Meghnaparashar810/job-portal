@@ -13,7 +13,7 @@ function Profile() {
       try {
 
         const res = await axios.get(
-          "http://localhost:8000/api/auth/profile",
+          "https://job-portal-1-p5qs.onrender.com/api/auth/profile",
           {
             headers: {
               Authorization: `Bearer ${localStorage.getItem("token")}`,
